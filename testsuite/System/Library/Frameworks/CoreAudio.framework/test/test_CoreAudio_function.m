@@ -5,19 +5,14 @@
 
 #include <darling-testsuite/assertion.h>
 
-// #include "CoreAudio/HostTime.h"
+#include <CoreAudio/CoreAudioTypes.h>
 
-#include <mach/mach_time.h>
-
-UInt64_t AudioGetCurrentHostTime (void)
-{
-    mach_absolute_time();
-    STUB();
-    return 0;
-}
+#include <CoreAudio/CoreAudio.h>
+ 
+#include <CoreAudio/HostTime.h>
 
 int main() {
-    // #include <Foundation/NSConnection.h>
+    
     assert_uint64_t(@"AudioGetCurrentHostTime", AudioGetCurrentHostTime);
 
 }
