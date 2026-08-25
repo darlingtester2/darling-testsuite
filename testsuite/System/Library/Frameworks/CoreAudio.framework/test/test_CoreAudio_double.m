@@ -9,8 +9,6 @@
 
 #include <mach/mach_time.h>
 
-#include "stub.h"
-
 double AudioGetHostClockFrequency(void)
 {
     mach_timebase_info_data_t theTimeBaseInfo;
