@@ -12,6 +12,6 @@
 #include <CoreAudio/HostTime.h>
 
 int main() {
-assert_equals_double(@"AudioGetHostClockFrequency", AudioGetHostClockFrequency);
+assert_equals_double(@"AudioGetHostClockFrequency", AudioGetHostClockFrequency, AudioGetHostClockFrequency);
 
 }
