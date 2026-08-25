@@ -21,4 +21,3 @@ install(
         "${INSTALL_DIR_TESTCASE}"
 )
 
-)
