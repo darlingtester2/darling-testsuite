@@ -9,8 +9,6 @@
 
 #include <mach/mach_time.h>
 
-#include "stub.h"
-
 UInt64_t AudioGetCurrentHostTime (void)
 {
     mach_absolute_time();
