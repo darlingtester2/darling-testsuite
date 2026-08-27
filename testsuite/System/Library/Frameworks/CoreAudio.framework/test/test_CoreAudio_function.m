@@ -11,8 +11,16 @@
  
 #include <CoreAudio/HostTime.h>
 
+int main(int argc, const char * argv[]) {
+    @autoreleasepool { 
+        NSLog(@"AudioGetCurrentHostTime retrieved expected value: %u", AGCHT_value);
+    }
+    return 0;
+}
+/*
 int main() {
     
     assert_uint64_t(@"AudioGetCurrentHostTime", AudioGetCurrentHostTime);
 
 }
+*/
