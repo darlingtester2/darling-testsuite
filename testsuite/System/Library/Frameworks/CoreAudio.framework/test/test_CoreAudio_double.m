@@ -25,7 +25,8 @@ int main(int argc, const char * argv[]) {
 
 
 int main() {
-assert_equals_double(@"AudioGetHostClockFrequency", 24000000.000000, AudioGetHostClockFrequency);
+double AGHCF_ACTUAL_VALUE = AudioGetHostClockFrequency();
+assert_equals_double(@"AudioGetHostClockFrequency", 24000000.000000, AGHCF_ACTUAL_VALUE);
 
 }
 
