@@ -11,6 +11,7 @@
 
 #include <CoreAudio/HostTime.h>
 
+*/
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         double AGHCF_value = AudioGetHostClockFrequency();
@@ -18,11 +19,11 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
+*/
 
 
-/*
 int main() {
-assert_equals_double(@"AudioGetHostClockFrequency", AudioGetHostClockFrequency, AudioGetHostClockFrequency);
+assert_equals_double(@"AudioGetHostClockFrequency", 24000000.000000, AudioGetHostClockFrequency);
 
 }
-*/
+
