@@ -11,14 +11,16 @@
 
 #include <CoreAudio/HostTime.h>
 
-*/
+/*
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         double AGHCF_value = AudioGetHostClockFrequency();
         NSLog(@"AudioGetHostClockFrequency retrieved expected value: %f", AGHCF_value);
     }
-    return 0;
+    return 0
 }
+
 */
 
 
