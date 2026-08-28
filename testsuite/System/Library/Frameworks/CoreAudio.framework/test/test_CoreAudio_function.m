@@ -13,6 +13,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool { 
+        uint64_t AGCHT_value = AudioGetCurrentHostTime();
         NSLog(@"AudioGetCurrentHostTime retrieved expected value: %u", AGCHT_value);
     }
     return 0;
