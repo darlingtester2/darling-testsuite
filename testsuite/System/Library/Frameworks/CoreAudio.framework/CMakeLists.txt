@@ -7,7 +7,7 @@ set(DARLING_IDENTIFIER "${DARLING_IDENTIFIER}_CoreAudio_framework")
 find_library(CORE_AUDIO CoreAudio REQUIRED)
 add_executable("${DARLING_IDENTIFIER}.test_CoreAudio_double" "test/test_CoreAudio_double.m")
 target_link_libraries("${DARLING_IDENTIFIER}.test_CoreAudio_double" PRIVATE "-framework Foundation" darling-testsuite-lib ${CORE_AUDIO})
-add_test(NAME "${DARLING_PATH}/test_CoreAudio_double" COMMAND "${DARLING_IDENTIFIER}.test_CoreAudio_function")
+add_test(NAME "${DARLING_PATH}/test_CoreAudio_double" COMMAND "${DARLING_IDENTIFIER}.test_CoreAudio_double")
 
 add_executable("${DARLING_IDENTIFIER}.test_CoreAudio_function" "test/test_CoreAudio_function.m")
 target_link_libraries("${DARLING_IDENTIFIER}.test_CoreAudio_function" PRIVATE "-framework Foundation" darling-testsuite-lib ${CORE_AUDIO})
